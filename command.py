@@ -56,7 +56,7 @@ def tip(bot,update):
 			if balance < amount:
 				bot.send_message(chat_id=update.message.chat_id, text="@{0} you have insufficent funds.".format(user))
 			if balance > maxtip:
-				bot.send_message(chat_id=update.message.chat_id, text="Maximum tip amount is 77 MEME / PEPE".format(user))
+				bot.send_message(chat_id=update.message.chat_id, text="Maximum tip amount is 100 MEME / PEPE".format(user))
 			elif target == user:
 				bot.send_message(chat_id=update.message.chat_id, text="You can't tip yourself silly.")
 			else:
@@ -128,7 +128,7 @@ def withdraw(bot,update):
 
 def hi(bot,update):
 	user = update.message.from_user.username
-	bot.send_message(chat_id=update.message.chat_id, text="Hello @{0}, how are you doing today?".format(user))
+	bot.send_message(chat_id=update.message.chat_id, text="Hello @{0}, how are you honking today?".format(user))
 
 def moon(bot,update):
   bot.send_message(chat_id=update.message.chat_id, text="Moon mission inbound!")
